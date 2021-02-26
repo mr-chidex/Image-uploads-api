@@ -8,9 +8,10 @@ exports.addImage = async (req, res, next) => {
   try {
     if (!req.file)
       return res.status(400).json({ message: "please select an image" });
+
     console.log(req.file);
 
-    const cloudImage = await cloudinary.v2.uploader.upload(req.file);
+    const cloudImage = await cloudinary.v2.uploader.upload(req.file.path);
     console.log("cloud_image", cloudImage);
   } catch (error) {
     next(error);
