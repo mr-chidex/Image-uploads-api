@@ -14,7 +14,7 @@ exports.addImage = async (req, res, next) => {
       folder: "image/cloud_image",
     });
 
-    if (!cloudinary)
+    if (!cloudImage)
       return res.status(400).json({ message: "error uploading image" });
 
     //Note: public_id was splitted because a folder name was specified image/cloud_name/
