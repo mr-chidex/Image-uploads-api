@@ -26,13 +26,13 @@ git clone https://github.com/mr-chidex/Image-uploads-api.git
 
 ```
  cd Image-uploads-api
- yarn install
+ npm install
 ```
 
 ### Running this project locally
 
 ```
- yarn dev
+ npm run dev-server
 ```
 
 ## Show your support
